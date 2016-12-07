@@ -1,0 +1,61 @@
+body {
+
+}
+.content {
+    margin: 0 auto;
+    width: 800px;
+}
+.table-container {
+    margin-top: 10px;
+    border: 1px solid #333333;
+}
+table {
+    border-collapse: collapse;
+    background-color: #f5f5f5;
+}
+table caption {
+    color: #546878;
+    text-align: left;
+    padding: 3px;
+}
+table thead {
+
+}
+table thead tr th {
+    border: 1px solid #787878;
+    padding: 2px 3px 2px 3px;
+    font-weight: bold;
+    color: #767676;
+}
+table thead tr th {
+
+}
+table tbody {
+
+}
+table tbody tr {
+
+}
+table tbody tr td {
+    border: 1px solid #787878;
+    padding: 2px 3px 2px 3px;
+}
+table span {
+    display: block;
+    overflow: hidden;
+}
+/* SCROOLABLE TABLE */
+.scrollable {
+    overflow-x: auto;
+    overflow-y: auto;
+    position: relative;
+}
+
+/* CONGELAMENTO POR POSICIONAMENTO DE CELULAS */
+table thead tr th.frozed, table tbody tr td.frozed  {
+    position: absolute;
+}
+/* CONGELAMENTO POR BODY CLONE */
+table.cloned {
+    position: absolute;
+}

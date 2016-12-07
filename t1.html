@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Teste de congelamento de colunas</title>
+        <link rel="stylesheet" href="./tables.css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+        <div class="content">
+            <p>
+                Tabela crua para observarmos as mudanças que serão adicionadas
+            </p>
+            <div class="table-container">
+                <table class="" style="width: 800;">
+                    <caption>Tabela 1 sem congelamentos</caption>
+                    <thead>
+                        <tr>
+                            <th class=""><span style="width: 150px;">Nome</span></th>
+                            <th class=""><span style="width: 150px;">Sobrenome</span></th>
+                            <th class=""><span style="width: 150px;">email</span></th>
+                            <th class=""><span style="width: 150px;">salario</span></th>
+                            <th class=""><span style="width: 150px;">cargo</span></th>
+                            <th class=""><span style="width: 150px;">idade</span></th>
+                            <th class=""><span style="width: 150px;">sexo</span></th>
+                            <th class=""><span style="width: 150px;">estado civil</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class=""><span style="width: 150px;">Julio</span></td>
+                            <td class=""><span style="width: 150px;">Verne</span></td>
+                            <td class=""><span style="width: 150px;">juve@gmail.com</span></td>
+                            <td class=""><span style="width: 150px;">5.000</span></td>
+                            <td class=""><span style="width: 150px;">Auxiliar de programador</span></td>
+                            <td class=""><span style="width: 150px;">18</span></td>
+                            <td class=""><span style="width: 150px;">Sim</span></td>
+                            <td class=""><span style="width: 150px;">Solteiro</span></td>
+                        </tr>
+                        <tr>
+                            <td class=""><span style="width: 150px;">Creidi</span></td>
+                            <td class=""><span style="width: 150px;">Silva</span></td>
+                            <td class=""><span style="width: 150px;">cresil@gmail.com</span></td>
+                            <td class=""><span style="width: 150px;">1.000</span></td>
+                            <td class=""><span style="width: 150px;">Manicure</span></td>
+                            <td class=""><span style="width: 150px;">55</span></td>
+                            <td class=""><span style="width: 150px;">Ah ta</span></td>
+                            <td class=""><span style="width: 150px;">Viuva</span></td>
+                        </tr>
+                        <tr>
+                            <td class=""><span style="width: 150px;">Deocrécio</span></td>
+                            <td class=""><span style="width: 150px;">Juiaba</span></td>
+                            <td class=""><span style="width: 150px;">deoju@gmail.com</span></td>
+                            <td class=""><span style="width: 150px;">3.000</span></td>
+                            <td class=""><span style="width: 150px;">Varredor</span></td>
+                            <td class=""><span style="width: 150px;">40</span></td>
+                            <td class=""><span style="width: 150px;">As veis</span></td>
+                            <td class=""><span style="width: 150px;">Casado</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                Scroll usando posicionamento usando colunas congeladas com posicionamento absoluto
+            </p>
+            <div class="table-container  scrollable">
+
+                <table class="">
+                    <caption>Tabela 2 duas colunas congeladas no inicio</caption>
+                    <thead>
+                        <tr>
+                            <th class="frozed"><span style="width: 150px; left:150px;">Nome</span></th>
+                            <th class="frozed"><span style="width: 150px; left:300px;">Sobrenome</span></th>
+                            <th class=""><span style="width: 150px;">email</span></th>
+                            <th class=""><span style="width: 150px;">salario</span></th>
+                            <th class=""><span style="width: 150px;">cargo</span></th>
+                            <th class=""><span style="width: 150px;">idade</span></th>
+                            <th class=""><span style="width: 150px;">sexo</span></th>
+                            <th class=""><span style="width: 150px;">estado civil</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="frozed"><span style="width: 150px;">Julio</span></td>
+                            <td class="frozed"><span style="width: 150px;">Verne</span></td>
+                            <td class=""><span style="width: 150px;">juve@gmail.com</span></td>
+                            <td class=""><span style="width: 150px;">5.000</span></td>
+                            <td class=""><span style="width: 150px;">Auxiliar de programador</span></td>
+                            <td class=""><span style="width: 150px;">18</span></td>
+                            <td class=""><span style="width: 150px;">Sim</span></td>
+                            <td class=""><span style="width: 150px;">Solteiro</span></td>
+                        </tr>
+                        <tr>
+                            <td class="frozed"><span style="width: 150px;">Creidi</span></td>
+                            <td class="frozed"><span style="width: 150px;">Silva</span></td>
+                            <td class=""><span style="width: 150px;">cresil@gmail.com</span></td>
+                            <td class=""><span style="width: 150px;">1.000</span></td>
+                            <td class=""><span style="width: 150px;">Manicure</span></td>
+                            <td class=""><span style="width: 150px;">55</span></td>
+                            <td class=""><span style="width: 150px;">Ah ta</span></td>
+                            <td class=""><span style="width: 150px;">Viuva</span></td>
+                        </tr>
+                        <tr>
+                            <td class="frozed"><span style="width: 150px;">Deocrécio</span></td>
+                            <td class="frozed"><span style="width: 150px;">Juiaba</span></td>
+                            <td class=""><span style="width: 150px;">deoju@gmail.com</span></td>
+                            <td class=""><span style="width: 150px;">3.000</span></td>
+                            <td class=""><span style="width: 150px;">Varredor</span></td>
+                            <td class=""><span style="width: 150px;">40</span></td>
+                            <td class=""><span style="width: 150px;">As veis</span></td>
+                            <td class=""><span style="width: 150px;">Casado</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                Exemplo de congelamento das colunas usando uma tabela clone posicionada sobre a original, considerando:
+            </p>
+            <ul>
+                <li>Tabela tem quantidade fixa de linhas.</li>
+                <li>O overflow da celula ou span é hidden de forma que não redimensione a altura da linha.</li>
+                <li>Não haverá scroll vertical</li>
+            </ul>
+            <div class="table-container scrollable" style="height: 134px">
+
+                <table class="cloned">
+                    <caption>Tabela 3 2 colunas congeladas</caption>
+                    <thead>
+                        <tr>
+                            <th class=""><span style="width: 150px;">Nome</span></th>
+                            <th class=""><span style="width: 150px;">Sobrenome</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class=""><span style="width: 150px;">Julio</span></td>
+                            <td class=""><span style="width: 150px;">Verne</span></td>
+                        </tr>
+                        <tr>
+                            <td class=""><span style="width: 150px;">Creidi</span></td>
+                            <td class=""><span style="width: 150px;">Silva</span></td>
+                        </tr>
+                        <tr>
+                            <td class=""><span style="width: 150px;">Deocrécio</span></td>
+                            <td class=""><span style="width: 150px;">Juiaba</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="" style="width: 800;">
+                    <caption>&nbsp;</caption>
+                    <thead>
+                        <tr>
+                            <th class=""><span style="width: 150px;">Nome</span></th>
+                            <th class=""><span style="width: 150px;">Sobrenome</span></th>
+                            <th class=""><span style="width: 150px;">email</span></th>
+                            <th class=""><span style="width: 150px;">salario</span></th>
+                            <th class=""><span style="width: 150px;">cargo</span></th>
+                            <th class=""><span style="width: 150px;">idade</span></th>
+                            <th class=""><span style="width: 150px;">sexo</span></th>
+                            <th class=""><span style="width: 150px;">estado civil</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class=""><span style="width: 150px;">Julio</span></td>
+                            <td class=""><span style="width: 150px;">Verne</span></td>
+                            <td class=""><span style="width: 150px;">juve@gmail.com</span></td>
+                            <td class=""><span style="width: 150px;">5.000</span></td>
+                            <td class=""><span style="width: 150px;">Auxiliar de programador</span></td>
+                            <td class=""><span style="width: 150px;">18</span></td>
+                            <td class=""><span style="width: 150px;">Sim</span></td>
+                            <td class=""><span style="width: 150px;">Solteiro</span></td>
+                        </tr>
+                        <tr>
+                            <td class=""><span style="width: 150px;">Creidi</span></td>
+                            <td class=""><span style="width: 150px;">Silva</span></td>
+                            <td class=""><span style="width: 150px;">cresil@gmail.com</span></td>
+                            <td class=""><span style="width: 150px;">1.000</span></td>
+                            <td class=""><span style="width: 150px;">Manicure</span></td>
+                            <td class=""><span style="width: 150px;">55</span></td>
+                            <td class=""><span style="width: 150px;">Ah ta</span></td>
+                            <td class=""><span style="width: 150px;">Viuva</span></td>
+                        </tr>
+                        <tr>
+                            <td class=""><span style="width: 150px;">Deocrécio</span></td>
+                            <td class=""><span style="width: 150px;">Juiaba</span></td>
+                            <td class=""><span style="width: 150px;">deoju@gmail.com</span></td>
+                            <td class=""><span style="width: 150px;">3.000</span></td>
+                            <td class=""><span style="width: 150px;">Varredor</span></td>
+                            <td class=""><span style="width: 150px;">40</span></td>
+                            <td class=""><span style="width: 150px;">As veis</span></td>
+                            <td class=""><span style="width: 150px;">Casado</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+        </div><!-- end content -->
+    </body>
+</html>
